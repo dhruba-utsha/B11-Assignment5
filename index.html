@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins{
+            font-family: "Poppins";
+        }
+    </style>
+</head>
+<body class="font-poppins bg-[#F4F7FF] text-[#00303C]">
+    <header class="container mx-auto px-6 py-8">
+        <nav class="flex justify-between bg-white p-4 rounded-[1rem]">
+            <div class="flex items-center gap-4">
+                <img src="assets\logo.png" alt="logo">
+                <h1 class="text-[2.2rem]">Dev<span class="font-bold">Board</span> </h1>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="bg-[#F4F7FF] px-4 py-1 rounded-[2rem] flex items-center gap-4">
+                    <img src="assets\checkbox.png" alt="checkbox">
+                    <p class="text-[2rem] font-bold">23</p>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-[2rem] p-2.5">
+                    <img src="assets\theme-btn.png" alt="theme">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pb-6">
+        <div class="grid grid-cols-[3fr_1fr] gap-6">
+            <!-- tasks -->
+            <div class="bg-white p-6 rounded-[1rem]">
+                <div class="flex justify-between pb-8 border-b-2 border-dashed border-[#3752FD]">
+                    <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-xl py-4 px-8">
+                        <div class="bg-white p-6 rounded-full">
+                            <img src="assets\checkbox.png" alt="checkbox">
+                        </div> 
+                        <p class="font-medium text-[1rem]">Task Assigned <br> <span class="font-bold text-[2rem]">6</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl py-4 pl-6 pr-24">
+                        <img src="assets\board.png" alt="board">
+                        <p class="text-white font-medium text-[1.5rem]">Discover Something <br> New Today!</p>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-xl py-4 px-8">
+                        <div class="bg-white p-6 rounded-full">
+                            <img src="assets\calender.png" alt="calender">
+                        </div>    
+                        <p class="text-[1.4rem]">todays<br> <span class="font-bold">date!</span></p>
+                    </div>
+                </div>
+
+                <div class="pt-8 grid grid-cols-3 gap-4">
+                    <div class="bg-[#F4F7FF] rounded-[1rem] p-8 space-y-4">
+                        <p class="bg-white rounded-lg py-3 pl-7 w-[8.4rem]">ShopEase</p>
+                        <h1 class="text-[1.5rem] font-medium">Fix Mobile Button Issue </h1>
+                        <p class="bg-white rounded-lg p-6 text-gray-500 truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <div class="flex justify-between items-center border-t-2 border-dashed border-[#3752FD] pt-4">
+                            <p class="text-sm">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-[1rem] p-8 space-y-4">
+                        <p class="bg-white rounded-lg py-3 pl-6 w-[8.2rem]">CloudSync</p>
+                        <h1 class="text-[1.5rem] font-medium">Add Dark Mode</h1>
+                        <p class="bg-white rounded-lg p-6 text-gray-500 truncate">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                        <div class="flex justify-between items-center border-t-2 border-dashed border-[#3752FD] pt-4">
+                            <p class="text-sm">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-[1rem] p-8 space-y-4">
+                        <p class="bg-white rounded-lg py-3 pl-7 w-[7.5rem]">SwiftPay</p>
+                        <h1 class="text-[1.5rem] font-medium">Optimize  Home page</h1>
+                        <p class="bg-white rounded-lg p-6 text-gray-500 truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <div class="flex justify-between items-center border-t-2 border-dashed border-[#3752FD] pt-4">
+                            <p class="text-sm">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-[1rem] p-8 space-y-4">
+                        <p class="bg-white rounded-lg py-3 pl-7 w-[6rem]">Meta</p>
+                        <h1 class="text-[1.5rem] font-medium">Add new emoji 🤲</h1>
+                        <p class="bg-white rounded-lg p-6 text-gray-500 truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <div class="flex justify-between items-center border-t-2 border-dashed border-[#3752FD] pt-4">
+                            <p class="text-sm">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-[1rem] p-8 space-y-4">
+                        <p class="bg-white rounded-lg py-3 pl-7 w-[8.8rem]">Google LLC</p>
+                        <h1 class="text-[1.5rem] font-medium">Integrate OpenAI API</h1>
+                        <p class="bg-white rounded-lg p-6 text-gray-500 truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <div class="flex justify-between items-center border-t-2 border-dashed border-[#3752FD] pt-4">
+                            <p class="text-sm">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-[1rem] p-8 space-y-4">
+                        <p class="bg-white rounded-lg py-3 pl-7 w-[8.5rem]">Glassdoar</p>
+                        <h1 class="text-[1.5rem] font-medium">Improve Job search </h1>
+                        <p class="bg-white rounded-lg p-6 text-gray-500 truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <div class="flex justify-between items-center border-t-2 border-dashed border-[#3752FD] pt-4">
+                            <p class="text-sm">Deadline <br> <span class="font-semibold">21 March 2025</span></p>
+                            <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- activity -->
+            <div class="bg-white p-6 rounded-[1rem] text-center">
+                <div class="flex justify-center items-center gap-4 pb-4">
+                    <img src="assets\activity.png" alt="activity">
+                    <p class="font-medium text-[1.25rem]">Activity Log</p>
+                </div>
+                <div class="border-b-2 border-dashed border-[#3752FD] pb-4">
+                    <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white text-[1rem] font-medium ">Clear History</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
