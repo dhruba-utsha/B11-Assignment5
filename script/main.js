@@ -21,7 +21,7 @@ for (const button of completeButtons){
                 document.getElementById("assigned-task").innerText = assignedTask - 1;
                 document.getElementById("checked-task").innerText = checkedTask + 1;
                 button.setAttribute('disabled', true);
-                
+
                 let taskTitle = button.parentNode.parentNode.childNodes[3].innerText;
                 let time = getTime();
 
@@ -40,3 +40,11 @@ document.getElementById("clear-history").addEventListener('click',
         document.getElementById("activity").innerHTML = "";
         }
 )
+
+document.getElementById("theme-color").addEventListener('click',
+    function(){
+        const bgColor = randomColor();
+        document.body.style.backgroundColor = bgColor;
+        }
+)
+
