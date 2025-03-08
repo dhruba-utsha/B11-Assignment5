@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins{
+            font-family: "Poppins";
+        }
+    </style>
+</head>
+<body class="font-poppins bg-[#F4F7FF] text-[#00303C]">
+    <header class="container mx-auto px-6 pt-8">
+        <nav class="flex justify-between bg-white p-4 rounded-[1rem]">
+            <div class="flex items-center gap-4">
+                <img src="assets\logo.png" alt="logo">
+                <h1 class="text-[2rem]">Dev<span class="font-bold">Board</span> </h1>
+            </div>
+            <div id="back-btn">
+                <button class="bg-[#3752FD] px-6 py-4 rounded-lg text-white font-medium cursor-pointer">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pb-8">
+        <h1 class="text-[2rem] text-center font-bold py-4">Blogs</h1>
+        <div class="bg-white p-6 rounded-[1rem] mb-8 text-xl">
+            <h1 class="font-bold border-b-2 border-dashed border-[#3752FD] pb-4">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <p class="text-gray-500 pt-4">getElementsByTagName(), getElementsByClassName(), getElementById(), querySelectorAll(), querySelector()
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-[1rem] mb-8 text-xl">
+            <h1 class="font-bold border-b-2 border-dashed border-[#3752FD] pb-4">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            <p class="text-gray-500 pt-4">- innerHTML returns all the content inside an element including html tags, texts, comments and everything. <br>
+                - innerText returns only the text content inside an element, which are belongs to a html tag. It also consider the style of the text content. <br>
+                - textContent ignores the style of the text and only returns the text content inside an element, which are belongs to a html tag.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-[1rem] mb-8 text-xl">
+            <h1 class="font-bold border-b-2 border-dashed border-[#3752FD] pb-4">Question-3: What is event delegation in the DOM?</h1>
+            <p class="text-gray-500 pt-4">Event delegation basically means adding a single event listener to parent element, instead of adding separate event listeners to each child element. It helps to achieve trigger events for child elements, even we need an event listener on the child elements.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-[1rem] mb-8 text-xl">
+            <h1 class="font-bold border-b-2 border-dashed border-[#3752FD] pb-4">Question-4: What is event bubbling in the DOM?</h1>
+            <p class="text-gray-500 pt-4">Event bubbling basically means passing events from child elements to parent elements. For example, if we add event listeners for both child and parent element, and if an event occurs in child element, it will automatically trigger the event of parent element and the event of parent element will also take place.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-[1rem] text-xl">
+            <h1 class="font-bold border-b-2 border-dashed border-[#3752FD] pb-4">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p class="text-gray-500 pt-4">createElement() - create a HTML element <br>
+                 appendChild() - add a HTML element <br>
+                 removeChild() - remove a HTML element
+            </p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("back-btn").addEventListener('click',
+            function(){
+                window.location.href = "index.html"
+            }
+        )
+    </script>
+</body>
+</html>
